@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+    animation-name: example;
+  
+  
+ width: 150px;
+ height: 150px;
+  }
+
+  @keyframes example {
+  0%   {background-color:rgb(255, 0, 255); left:0px; top:0px;}
+  0%{transform: rotateX(150deg);}
+
+  25%  {background-color:yellow; left:200px; top:0px;}
+  25%{transform: rotateX(150deg);
+  transform: rotateY(130deg);
+  }
+  50%  {background-color:blue; left:200px; top:200px;}
+  50%{transform: rotateX(150deg);
+  transform: rotateY(130deg);
+  transform: rotateZ(90deg);}
+  75%  {background-color:rgb(255, 196, 0); left:0px; top:200px;}
+  75%{transform: rotateX(150deg);
+  transform: rotateY(130deg);
+  transform: rotateZ(90deg);}
+  100% {background-color:red; left:0px; top:0px;}
+  100%{transform: rotateX(150deg);}
+}
+  canvas {
+  	border:1px solid rgb(0, 247, 255);
+    margin-top: 160px;
+  }
+
+  body{
+    background: repeating-radial-gradient(rgb(225, 0, 255), rgb(0, 102, 255) 10%, rgb(0, 255, 0) 15%);
+  }
+  .btn-success{
+     margin-top: 1px;
+  }
+  </style>
+</head>
+
+<body>
+<center>
+<div class="container">
+	<h3 class="btn btn-primary">Introduction<br>to p5.js</h3>
+  <hr>
+  
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+</div>
+</center>
+
+</body>
+<script src="main.js"></script>
+
+</html>
+
